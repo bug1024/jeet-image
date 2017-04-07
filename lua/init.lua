@@ -1,6 +1,5 @@
 -- 入口文件
 
-
 local img_original_path = ngx.var.img_original_path
 local img_thumbnail_path = ngx.var.img_thumbnail_path
 local width = ngx.var.width
@@ -14,4 +13,7 @@ gm.convert{
     output = img_thumbnail_path,
     size = width .. 'x' .. height
 }
+
+-- 重新请求
+ngx.exec(ngx.var.request_uri);
 

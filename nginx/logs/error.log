@@ -1,0 +1,330 @@
+2017/04/07 12:42:17 [error] 79871#28547781: *4 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:15: module 'sys' not found:
+	no field package.preload['sys']
+	no file '/Users/bug1024/Github/jeet-image/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys/init.lua'
+	no file './sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/luajit-2.1.0-beta2/sys.lua'
+	no file '/usr/local/share/lua/5.1/sys.lua'
+	no file '/usr/local/share/lua/5.1/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/lua/5.1/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/lua/5.1/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys.so'
+	no file './sys.so'
+	no file '/usr/local/lib/lua/5.1/sys.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/lib/lua/5.1/sys.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:5: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 12:42:17 [error] 79871#28547781: *5 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:15: module 'sys' not found:
+	no field package.preload['sys']
+	no file '/Users/bug1024/Github/jeet-image/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys/init.lua'
+	no file './sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/luajit-2.1.0-beta2/sys.lua'
+	no file '/usr/local/share/lua/5.1/sys.lua'
+	no file '/usr/local/share/lua/5.1/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/lua/5.1/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/lua/5.1/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys.so'
+	no file './sys.so'
+	no file '/usr/local/lib/lua/5.1/sys.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/lib/lua/5.1/sys.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:5: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 12:42:17 [error] 79871#28547781: *6 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:15: module 'sys' not found:
+	no field package.preload['sys']
+	no file '/Users/bug1024/Github/jeet-image/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys/init.lua'
+	no file './sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/luajit-2.1.0-beta2/sys.lua'
+	no file '/usr/local/share/lua/5.1/sys.lua'
+	no file '/usr/local/share/lua/5.1/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/lua/5.1/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/lua/5.1/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys.so'
+	no file './sys.so'
+	no file '/usr/local/lib/lua/5.1/sys.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/lib/lua/5.1/sys.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:5: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 12:42:17 [error] 79871#28547781: *7 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:15: module 'sys' not found:
+	no field package.preload['sys']
+	no file '/Users/bug1024/Github/jeet-image/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys/init.lua'
+	no file './sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/luajit-2.1.0-beta2/sys.lua'
+	no file '/usr/local/share/lua/5.1/sys.lua'
+	no file '/usr/local/share/lua/5.1/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/lua/5.1/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/lua/5.1/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys.so'
+	no file './sys.so'
+	no file '/usr/local/lib/lua/5.1/sys.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/lib/lua/5.1/sys.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:5: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 12:42:17 [error] 79871#28547781: *8 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:15: module 'sys' not found:
+	no field package.preload['sys']
+	no file '/Users/bug1024/Github/jeet-image/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys/init.lua'
+	no file './sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/luajit-2.1.0-beta2/sys.lua'
+	no file '/usr/local/share/lua/5.1/sys.lua'
+	no file '/usr/local/share/lua/5.1/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/lua/5.1/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/lua/5.1/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys.so'
+	no file './sys.so'
+	no file '/usr/local/lib/lua/5.1/sys.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/lib/lua/5.1/sys.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:5: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 12:42:22 [error] 79871#28547781: *9 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:15: module 'sys' not found:
+	no field package.preload['sys']
+	no file '/Users/bug1024/Github/jeet-image/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys/init.lua'
+	no file './sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/luajit-2.1.0-beta2/sys.lua'
+	no file '/usr/local/share/lua/5.1/sys.lua'
+	no file '/usr/local/share/lua/5.1/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/lua/5.1/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/lua/5.1/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys.so'
+	no file './sys.so'
+	no file '/usr/local/lib/lua/5.1/sys.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/lib/lua/5.1/sys.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:5: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 12:42:52 [error] 79871#28547781: *10 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:15: module 'sys' not found:
+	no field package.preload['sys']
+	no file '/Users/bug1024/Github/jeet-image/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys/init.lua'
+	no file './sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/luajit-2.1.0-beta2/sys.lua'
+	no file '/usr/local/share/lua/5.1/sys.lua'
+	no file '/usr/local/share/lua/5.1/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/lua/5.1/sys.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/lua/5.1/sys/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/sys.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/sys.so'
+	no file './sys.so'
+	no file '/usr/local/lib/lua/5.1/sys.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/lib/lua/5.1/sys.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:5: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:02:43 [error] 79871#28547781: *11 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/index.lua:6: attempt to index local 'gm' (a function value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/index.lua: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:02:43 [error] 79871#28547781: *12 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/index.lua:6: attempt to index local 'gm' (a function value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/index.lua: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:02:43 [error] 79871#28547781: *13 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/index.lua:6: attempt to index local 'gm' (a function value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/index.lua: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:02:43 [error] 79871#28547781: *14 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/index.lua:6: attempt to index local 'gm' (a function value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/index.lua: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:02:48 [error] 79871#28547781: *15 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/index.lua:6: attempt to index local 'gm' (a function value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/index.lua: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:03:18 [error] 79871#28547781: *16 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/index.lua:6: attempt to index local 'gm' (a function value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/index.lua: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:05:03 [error] 79871#28547781: *17 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:21: attempt to index global 'dok' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/convert.lua: in function 'convert'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:6: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:55555", referrer: "http://localhost:55555/"
+2017/04/07 13:05:03 [error] 79871#28547781: *18 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:21: attempt to index global 'dok' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/convert.lua: in function 'convert'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:6: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:55555", referrer: "http://localhost:55555/"
+2017/04/07 13:06:00 [error] 79871#28547781: *19 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:21: attempt to index global 'dok' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/convert.lua: in function 'convert'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:6: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:06:33 [error] 79871#28547781: *20 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:21: attempt to index global 'dok' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/convert.lua: in function 'convert'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:6: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:06:41 [error] 79871#28547781: *21 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:21: attempt to index global 'dok' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/convert.lua: in function 'convert'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:6: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:06:41 [error] 79871#28547781: *22 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:21: attempt to index global 'dok' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/convert.lua: in function 'convert'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:6: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:06:41 [error] 79871#28547781: *23 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:21: attempt to index global 'dok' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/convert.lua: in function 'convert'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:6: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:06:46 [error] 79871#28547781: *24 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:21: attempt to index global 'dok' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/convert.lua: in function 'convert'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:6: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:06:53 [error] 79871#28547781: *25 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:21: attempt to index global 'dok' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/convert.lua: in function 'convert'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:6: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:06:53 [error] 79871#28547781: *26 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:21: attempt to index global 'dok' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/convert.lua: in function 'convert'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:6: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:13:09 [error] 79871#28547781: *28 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:13: attempt to index global 'dok' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/convert.lua: in function 'convert'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:7: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:13:09 [error] 79871#28547781: *29 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:13: attempt to index global 'dok' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/convert.lua: in function 'convert'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:7: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:13:09 [error] 79871#28547781: *30 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:13: attempt to index global 'dok' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/convert.lua: in function 'convert'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:7: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:38:16 [error] 79871#28547781: *31 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:4: module 'dok' not found:
+	no field package.preload['dok']
+	no file '/Users/bug1024/Github/jeet-image/dok.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/dok.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/dok/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/dok.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/dok/init.lua'
+	no file './dok.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/luajit-2.1.0-beta2/dok.lua'
+	no file '/usr/local/share/lua/5.1/dok.lua'
+	no file '/usr/local/share/lua/5.1/dok/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/lua/5.1/dok.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/lua/5.1/dok/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/dok.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/dok.so'
+	no file './dok.so'
+	no file '/usr/local/lib/lua/5.1/dok.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/lib/lua/5.1/dok.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:4: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:38:17 [error] 79871#28547781: *32 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:4: module 'dok' not found:
+	no field package.preload['dok']
+	no file '/Users/bug1024/Github/jeet-image/dok.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/dok.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/dok/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/dok.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/dok/init.lua'
+	no file './dok.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/luajit-2.1.0-beta2/dok.lua'
+	no file '/usr/local/share/lua/5.1/dok.lua'
+	no file '/usr/local/share/lua/5.1/dok/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/lua/5.1/dok.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/share/lua/5.1/dok/init.lua'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/site/lualib/dok.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/lualib/dok.so'
+	no file './dok.so'
+	no file '/usr/local/lib/lua/5.1/dok.so'
+	no file '/usr/local/Cellar/openresty/1.11.2.2_2/luajit/lib/lua/5.1/dok.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:4: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:55555", referrer: "http://localhost:55555/"
+sh: gm: command not found
+sh: gm: command not found
+2017/04/07 13:47:04 [error] 79871#28547781: *34 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:66: attempt to index global 'nginx' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/convert.lua: in function 'convert'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:7: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:47:04 [error] 79871#28547781: *35 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:66: attempt to index global 'nginx' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/convert.lua: in function 'convert'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:7: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:47:04 [error] 79871#28547781: *36 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:66: attempt to index global 'nginx' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/convert.lua: in function 'convert'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:7: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+2017/04/07 13:47:09 [error] 79871#28547781: *37 lua entry thread aborted: runtime error: /Users/bug1024/Github/jeet-image/lua/convert.lua:66: attempt to index global 'nginx' (a nil value)
+stack traceback:
+coroutine 0:
+	/Users/bug1024/Github/jeet-image/lua/convert.lua: in function 'convert'
+	/Users/bug1024/Github/jeet-image/lua/index.lua:7: in function </Users/bug1024/Github/jeet-image/lua/index.lua:1>, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:55555"
+sh: gm: command not found
+sh: gm: command not found
+sh: gm: command not found
+sh: gm: command not found
+/Users/Bug1024/Desktop/xing.jpeg JPEG 2668x1508=>128x72+0+0 DirectClass 8-bit 0.010u 0m:0.013505s (284.1Mi pixels/s)
+/Users/Bug1024/Desktop/xing.jpeg=>/Users/Bug1024/Desktop/xing-new.jpeg JPEG 2668x1508=>128x72+0+0 DirectClass 8-bit 0.010u 0m:0.002265s (1.7Gi pixels/s)
+/Users/Bug1024/Desktop/xing.jpeg JPEG 2668x1508=>128x72+0+0 DirectClass 8-bit 0.010u 0m:0.013226s (290.1Mi pixels/s)
+/Users/Bug1024/Desktop/xing.jpeg=>/Users/Bug1024/Desktop/xing-new.jpeg JPEG 2668x1508=>128x72+0+0 DirectClass 8-bit 0.000u 0m:0.001156s (3.2Gi pixels/s)
+/Users/Bug1024/Desktop/xing.jpeg JPEG 2668x1508=>300x170+0+0 DirectClass 8-bit 0.020u 0m:0.021738s (176.5Mi pixels/s)
+/Users/Bug1024/Desktop/xing.jpeg=>/Users/Bug1024/Desktop/xing-300x300.jpeg JPEG 2668x1508=>300x170+0+0 DirectClass 8-bit 32.0Ki 0.000u 0m:0.005128s (748.2Mi pixels/s)
+/Users/Bug1024/Desktop/xing.jpeg JPEG 2668x1508=>300x170+0+0 DirectClass 8-bit 0.020u 0m:0.027449s (139.8Mi pixels/s)
+/Users/Bug1024/Desktop/xing.jpeg=>/Users/Bug1024/Desktop/xing-300x300.jpeg JPEG 2668x1508=>300x170+0+0 DirectClass 8-bit 32.0Ki 0.010u 0m:0.004207s (912.0Mi pixels/s)

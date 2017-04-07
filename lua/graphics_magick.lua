@@ -6,9 +6,10 @@ local M = {}
 M.version = '1.0'
 
 local util = require 'lua.util'
-local gm_cmd = '/usr/local/GraphicsMagick/bin/gm'
+--local gm_cmd = '/usr/local/GraphicsMagick/bin/gm'
+local gm_cmd = '/usr/local/Cellar/GraphicsMagick/1.3.25/bin/gm'
 
--- Command line convert:
+-- gm convert [ options ... ] input_file output_file
 function M.convert(...)
    -- args
    local args = util.unpack(
@@ -23,7 +24,11 @@ function M.convert(...)
       {arg='hflip',     type='boolean',  help='flip image horizontally'},
       {arg='quality',   type='number',   help='quality (0 to 100)',     default=90},
       {arg='benchmark', type='boolean',  help='benchmark command',      default=false},
-      {arg='verbose',   type='boolean',  help='verbose',                default=false}
+      {arg='text',      type='string',   help='text mask words'},
+      {arg='font',      type='string',   help='text mask font'},
+      {arg='fontsize',  type='number',   help='text mask font size'},
+      {arg='color',     type='string',   help='text mask color'},
+      {arg='verbose',   type='boolean',  help='verbose', default=false}
    )
 
    -- hint input size:
@@ -31,9 +36,6 @@ function M.convert(...)
    if args.size then
       table.insert(options, '-size ' .. args.size)
    end
-
-   -- input path:
-   table.insert(options, args.input)
 
    -- unpack commands:
    for cmd, val in pairs(args) do
@@ -43,6 +45,15 @@ function M.convert(...)
          table.insert(options, '-rotate ' .. val)
       elseif cmd == 'quality' then
          table.insert(options, '-quality ' .. val)
+      elseif cmd == 'text' and val then
+          -- todo
+         table.insert(options, '-draw "text 100,100 ' .. val .. '"')
+      elseif cmd == 'color' and val then
+         table.insert(options, '-fill ' .. val)
+      elseif cmd == 'font' and val then
+         table.insert(options, '-font ' .. val)
+      elseif cmd == 'fontsize' and val then
+         table.insert(options, '-pointsize ' .. val)
       elseif cmd == 'verbose' and val then
          table.insert(options, '-verbose')
       elseif cmd == 'vflip' and val then
@@ -51,6 +62,9 @@ function M.convert(...)
          table.insert(options, '-flop')
       end
    end
+
+   -- input path:
+   table.insert(options, args.input)
 
    -- output path:
    table.insert(options, args.output)
@@ -63,13 +77,11 @@ function M.convert(...)
       cmd = gm_cmd .. ' convert '
    end
    cmd = cmd .. table.concat(options, ' ')
-
+   ngx.say(cmd)
    -- exec command:
    if args.verbose then print(cmd) end
    os.execute(cmd)
 end
-
--- Exports:
 
 return M
 

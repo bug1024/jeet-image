@@ -1,5 +1,5 @@
 
---GraphicsMagick convert 命令封装
+-- GraphicsMagick 命令封装
 
 local M = {}
 
@@ -14,8 +14,6 @@ function M.convert(...)
    -- args
    local args = util.unpack(
       {...},
-      'gm.convert',
-      'Converts an image into another.',
       {arg='input',     type='string',   help='path to input image',    req=true},
       {arg='output',    type='string',   help='path to output image',   req=true},
       {arg='size',      type='string',   help='destination size'},
@@ -77,7 +75,6 @@ function M.convert(...)
       cmd = gm_cmd .. ' convert '
    end
    cmd = cmd .. table.concat(options, ' ')
-   ngx.say(cmd)
    -- exec command:
    if args.verbose then print(cmd) end
    os.execute(cmd)

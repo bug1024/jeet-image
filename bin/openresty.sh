@@ -19,8 +19,10 @@ app=`cd "$app"; pwd`
 
 nginx_path=$app/nginx
 
+option=$1
+
 test() {
-    openresty -t -c $nginx_path/conf/nginx.conf
+    openresty -p $nginx_path -t -c conf/nginx.conf
 }
 
 start() {
@@ -39,5 +41,4 @@ restart() {
     openresty -s restart -p $nginx_path -c conf/nginx.conf
 }
 
-start
-
+$option

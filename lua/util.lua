@@ -39,5 +39,17 @@ function M.unpack(args, ...)
     return unpack(dargs)
 end
 
+--------------------------------------------------------------------------------
+-- 写入文件
+-- @param filename 文件名称
+-- @param info 文件流
+--------------------------------------------------------------------------------
+function M.write_file(filename, info)
+     --写入文件(w覆盖)
+    local file = io.open(filename, "w")
+    file:write(info)
+    file:close()
+end
+
 return M
 

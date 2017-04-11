@@ -51,5 +51,19 @@ function M.write_file(filename, info)
     file:close()
 end
 
+--获取文件名
+function M.get_filename(res)
+    local filename = ngx.re.match(res, '(.+)filename="(.+)"(.*)')
+    if filename then
+        return filename[2]
+    end
+end
+
+--获取文件扩展名
+function M.get_extension(str)
+    return str:match(".+%.(%w+)$")
+end
+
+
 return M
 

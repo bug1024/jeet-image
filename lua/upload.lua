@@ -1,5 +1,4 @@
 -- 文件上传
--- curl -F "file=@xing.jpeg"   http://127.0.0.1:55555/upload/
 
 local upload = require "resty.upload"
 local string = require "resty.string"
@@ -22,7 +21,7 @@ while true do
         ngx.exit(500)
     end
 
-    ngx.say("read: ", cjson.encode({typ, res}))
+    -- ngx.say("read: ", cjson.encode({typ, res}))
 
     if typ == "header" then
         if res[1] ~= "Content-Type" then
@@ -39,6 +38,7 @@ while true do
             end
         end
      elseif typ == "body" then
+        -- TODO check file size
         if file then
             file:write(res)
         end
@@ -53,6 +53,6 @@ while true do
 end
 
 local typ, res, err = form:read()
-ngx.say("read: ", cjson.encode({typ, res}))
+-- ngx.say("read: ", cjson.encode({typ, res}))
 
 ngx.say("upload success :)")

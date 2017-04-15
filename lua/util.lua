@@ -64,6 +64,5 @@ function M.get_extension(str)
     return str:match(".+%.(%w+)$")
 end
 
-
 return M
 

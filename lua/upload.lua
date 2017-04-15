@@ -25,9 +25,13 @@ while true do
 
     if typ == "header" then
         if res[1] ~= "Content-Type" then
-            -- TODO unique file name
             local filename = util.get_filename(res[2])
-            local extension = util.get_extension(filename)
+            if not filename then
+                ngx.say("filename not found", os.time())
+                return
+            end
+            ngx.say("hello", os.time());
+            -- local extension = util.get_extension(filename)
             local file_name = "/Users/bug1024/Desktop/" .. os.time() .. filename
             if file_name then
                 file = io.open(file_name, "w+")

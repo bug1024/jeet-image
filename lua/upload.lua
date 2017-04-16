@@ -1,54 +1,66 @@
 -- 文件上传
 
-local upload = require "resty.upload"
-local string = require "resty.string"
-local md5 = require "resty.md5"
-local util = require "lua.util"
-local cjson = require "cjson"
+local upload       = require "resty.upload"
+local resty_sha256 = require "resty.sha256"
+local util         = require "lua.util"
+local resty_string = require "resty.string"
 
 local chunk_size = 4096
 local form, err = upload:new(chunk_size)
 if not form then
-    ngx.log(ngx.ERR, "failed to new upload: ", err)
-    ngx.exit(500)
+    ngx.say("failed to new upload: ", err)
+    return
 end
+
+local sha256, err = resty_sha256:new()
+if not sha256 then
+    ngx.say("failed to create the sha256 object: ", err)
+    return
+end
+
+-- file handle
 local file
+-- file name response to client
+local file_name
+-- upload path
+local upload_path = "/Users/bug1024/Desktop/"
 
 while true do
     local typ, res, err = form:read()
     if not typ then
-        ngx.log(ngx.ERR, "failed to read form: ", err)
-        ngx.exit(500)
+        ngx.say("failed to read form: ", err)
+        if file then
+            file:close()
+            file = nil
+        end
+        return
     end
-
-    -- ngx.say("read: ", cjson.encode({typ, res}))
 
     if typ == "header" then
         if res[1] ~= "Content-Type" then
             local filename = util.get_filename(res[2])
-            if not filename then
-                ngx.say("filename not found", os.time())
-                return
-            end
-            ngx.say("hello", os.time());
-            -- local extension = util.get_extension(filename)
-            local file_name = "/Users/bug1024/Desktop/" .. os.time() .. filename
-            if file_name then
+            if filename then
+                file_name = upload_path .. ngx.time() .. filename
                 file = io.open(file_name, "w+")
                 if not file then
-                    ngx.log(ngx.ERR, "failed to open file: ", err)
-                    ngx.exit(500)
+                    ngx.say("failed to open file: ", err)
+                    return
                 end
             end
         end
-     elseif typ == "body" then
-        -- TODO check file size
+    elseif typ == "body" then
         if file then
             file:write(res)
+            sha256:update(res)
         end
     elseif typ == "part_end" then
-        file:close()
-        file = nil
+        if file then
+            file:close()
+            file = nil
+            --local digest = sha256:final()
+            --sha256:reset()
+            --my_save_sha_sum
+        end
     elseif typ == "eof" then
         break
     else
@@ -56,7 +68,9 @@ while true do
     end
 end
 
-local typ, res, err = form:read()
--- ngx.say("read: ", cjson.encode({typ, res}))
+local digest = sha256:final()
+sha256:reset()
 
-ngx.say("upload success :)")
+ngx.say("sha256: ", resty_string.to_hex(digest))
+ngx.say("upload success: ", file_name)
+

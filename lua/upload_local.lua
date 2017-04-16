@@ -1,4 +1,4 @@
--- 文件上传
+-- upload file to local file system
 
 local upload       = require "resty.upload"
 local resty_sha256 = require "resty.sha256"

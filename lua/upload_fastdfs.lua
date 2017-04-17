@@ -16,6 +16,7 @@ local tracker_port = config.tracker_port
 -- get upload blob content
 local function get_upload_content()
     local filename
+    local extension
     local content
 
     local form, err = upload:new(chunk_size)
@@ -35,8 +36,7 @@ local function get_upload_content()
             if res[1] ~= "Content-Type" then
                 filename = util.get_filename(res[2])
                 if filename then
-                    self.extname = getextension(filename)
-                    -- do
+                    extension = util.get_extension(filename)
                 end
             end
         elseif typ == "body" then
@@ -56,7 +56,7 @@ local function get_upload_content()
         end
     end
 
-    return content
+    return content, extension
 end
 
 -- sent to fastdfs
@@ -86,9 +86,8 @@ local function send_fastdfs(blob, ext)
     return redirect_url
 end
 
-local content = get_upload_content()
--- TODO get file extension
-local url = send_fastdfs(content, "jpg")
+local content, ext = get_upload_content()
+local url = send_fastdfs(content, ext)
 
 ngx.say(url)
 

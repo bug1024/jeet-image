@@ -6,6 +6,8 @@ local width = ngx.var.width
 local height = ngx.var.height
 local ext = ngx.var.ext
 
+ngx.log(ngx.INFO, img_thumbnail_path)
+
 -- 切图
 local gm = require 'lua.gm'
 gm.convert{

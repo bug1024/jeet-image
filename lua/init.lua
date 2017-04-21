@@ -1,22 +1,23 @@
--- 入口文件
 
-local img_original_path = ngx.var.img_original_path
-local img_thumbnail_path = ngx.var.img_thumbnail_path
 local width = ngx.var.width
 local height = ngx.var.height
 local ext = ngx.var.ext
-
-ngx.log(ngx.ERR, img_thumbnail_path)
-ngx.exit(200)
+local input_file = ngx.var.file
+local output_file = input_file .. "_" .. width .. "x" .. height  .. "." .. ext
 
 -- 切图
 local gm = require 'lua.gm'
 gm.convert{
-    input = img_original_path,
-    output = img_thumbnail_path,
-    size = width .. 'x' .. height
+    input = input_file,
+    output = output_file,
+    size = width .. "x" .. height
 }
 
--- 重新请求
-ngx.exec(ngx.var.request_uri);
+local util = require "lua.util"
+
+if util.is_file(output_file) then
+    ngx.exec(ngx.var.request_uri);
+else
+    ngx.exit(404)
+end
 

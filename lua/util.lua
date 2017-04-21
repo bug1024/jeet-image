@@ -52,5 +52,16 @@ function M.get_extension(str)
     return str:match(".+%.(%w+)$")
 end
 
+--文件是否存在
+function M.is_file(path)
+    local f = io.open(path, "r")
+    if f ~= nil then
+        io.close(f)
+        return true
+    else
+        return false
+    end
+end
+
 return M
 

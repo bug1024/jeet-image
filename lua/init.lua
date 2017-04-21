@@ -1,9 +1,8 @@
 
 local width = ngx.var.width
 local height = ngx.var.height
-local ext = ngx.var.ext
-local input_file = ngx.var.file
-local output_file = input_file .. "_" .. width .. "x" .. height  .. "." .. ext
+local input_file = ngx.var.input_file
+local output_file = ngx.var.output_file
 
 -- 切图
 local gm = require 'lua.gm'

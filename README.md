@@ -35,6 +35,7 @@
     * 启动storage时，使用了相对路径的配置文件报错，改为使用绝对路径后即可
     * 需要修改tracker.conf，client.conf，storage.conf文件，设置base_path等信息
     * storage报错tracker server ip can't be 127.0.0.1，改为192.x.x.x即可
+ - 获取原图可以通过fdfs下载，是否也可以将fdfs和切图服务器部署在一起然后从本地直接获取?
 
 ## 参考
  - [OpenResty最佳实践](https://moonbingbing.gitbooks.io/openresty-best-practices/content/lua/brief.html)
